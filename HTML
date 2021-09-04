@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+   <main>
+
+    <nav class= 'navbar'>
+      <h1 class='navheading'>Harshita Nidhi</h1>
+      <div class='navmenu'>
+        <a href = '#aboutme'> About Me </a>
+        <a href = '#skills'> Skills </a>
+        <a href = '#projects'> Projects </a>
+        <a href = '#letsconnect'> Let's Connect! </a>
+      </div>
+    </nav>
+
+    <section class='herosection'>
+      <img class= 'profileimage' src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49T3RitJ48wZ-hkcLtZvdlotpc-uBxlTLVg&usqp=CAU'>
+      <div class='intro'>
+        <h1> Harshita Nidhi </h1>
+        <h3> B.Tech COE (2nd Year)</h2>
+        <h3> Delhi Technological University </h3>
+      </div>
+    </section>
+
+    <section class= 'aboutme' id= 'aboutme'>
+      <h1 class = 'whatidoheading'> About me...</h1>
+      <p class = 'whatidopara'> I am a hardworking and disciplined student pursuing B.tech in computer engineering from Delhi Technological University. Currently i am in 2nd year and aiming to grab a good internship.   </p>
+    </section>
+
+    <section class= 'skillsandprojects'>
+
+      <div class= 'skills' id = 'skills'>
+        <h2 class='cardheading'>Skills</h2>
+        <img src= 'https://www.kindpng.com/picc/m/355-3559027_c-programming-language-logo-clipart-png-download-c.png' title='c'>
+        <img src= 'https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png' title='c++'>
+        <img src= 'https://w7.pngwing.com/pngs/580/809/png-transparent-data-structure-logo-brand-data-structure-blue-text-logo.png' title='Data Structures and Algorithms'>
+        <img src= 'https://e7.pngegg.com/pngimages/63/313/png-clipart-html-computer-icons-world-wide-web-text-logo-thumbnail.png' title='html'>
+        <img src= 'https://image.shutterstock.com/image-vector/logo-vector-css-3-low-260nw-1902943426.jpg' title='css'>
+      </div>
+
+      <div class='projects' id='projects'>
+        
+       <h2 class='cardheading'>Projects</h2>
+
+      <div class ='projectcontainer' id= 'project1'>
+        <img src='https://e7.pngegg.com/pngimages/63/313/png-clipart-html-computer-icons-world-wide-web-text-logo-thumbnail.png'> 
+       <div class='projectdetail'>
+         <h4>Portfolio</h4>
+         <p class= 'project1'> I have made my portfolio using basic html and css. </p>
+       </div>  
+      </div>
+      
+      <div class ='projectcontainer' id= 'project2'>
+       <img src='https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png'> 
+       <div class='projectdetail'>
+         <h4>Infirmary management system</h4>
+         <p class= 'project1'> I have made a project on infirmary management system in c++ language.  </p>
+       </div>  
+      </div>
+
+      </div>
+    </section>
+
+    <section class= 'letsconnect' id = 'letsconnect'>
+      <h1>Let's Connect</h1>
+      <div>
+        <label for = 'name'>Name</label></br>
+        <input type = 'text' id = 'name' placeholder='Full Name'>
+      </div>
+      <div>
+        <label for = 'email'>Email Id</label></br>
+        <input type = 'text' id = 'email' placeholder='Email'>
+      </div>
+      <div>
+        <label for = 'message'>Message</label></br>
+        <textarea id='message' placeholder = 'Send some message..' rows='4' cols='50'></textarea>
+      </div>
+      <button class='submit' onClick={submit()}>Connect</button>
+    </section>
+
+   </main>
+   <script src="script.js"></script>
+  </body>
+</html>
